@@ -18,7 +18,7 @@ def remove_stash():
     shutil.rmtree(get_stash_dir())
 
 
-def install_stash(repo="ywangd", branch="master"):
+def install_stash(repo="warexify", branch="dev"):
     if not "TMPDIR" in os.environ:
         os.environ["TMPDIR"] = tempfile.gettempdir()
     ns = {"_owner": repo, "_br": branch}
@@ -27,10 +27,10 @@ def install_stash(repo="ywangd", branch="master"):
 
 def parse_gh_target(s):
     if s == "":
-        return "ywangd", "master"
+        return "warexify", "dev"
     s = s.replace("/", ":")
     if ":" not in s:
-        s = "ywangd:" + s
+        s = "warexify:" + s
     repo, branch = s.split(":")
     return repo, branch
 

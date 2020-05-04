@@ -9,8 +9,8 @@ from stash.tests.stashtest import StashTestCase, requires_network
 class WgetTests(StashTestCase):
     """tests for the 'wget' command."""
     cwd = tempfile.gettempdir()
-    download_target = "https://github.com/ywangd/stash/archive/master.zip"
-    invalid_target = "https://github.com/bennr01/stash/archive/does_not_exist.zip"
+    download_target = "https://github.com/warexify/stash/archive/master.zip"
+    invalid_target = "https://github.com/warexify/stash/archive/does_not_exist.zip"
 
     def tearDown(self):
         """clean up a test."""

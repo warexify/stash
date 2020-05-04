@@ -4,7 +4,7 @@ Selfupdate StaSh from the GitHub repo.
 
 Usage: selfupdate.py [-n] [-f] [target]
 
-       target         default to ywangd:master
+       target         default to warexify:dev
 
        -n, --check    check for update only
        -f, --force    update without checking for new version
@@ -60,7 +60,7 @@ def main(args):
         'target',
         nargs='?',
         help='target of update in the format of [owner]:branch. '
-        'Default to ywangd:master or simply master'
+        'Default to warexify:dev or simply dev'
     )
     ap.add_argument('-n', '--check', action='store_true', help='check for update only')
     ap.add_argument('-f', '--force', action='store_true', help='update without checking for new version')
@@ -69,16 +69,16 @@ def main(args):
     if ns.target is not None:
         target = ns.target
     else:
-        target = os.environ.get('SELFUPDATE_TARGET', 'ywangd:master')
+        target = os.environ.get('SELFUPDATE_TARGET', 'warexify:dev')
 
     fields = target.replace('/', ':').split(':', 1)
 
     if len(fields) == 2:
         owner, branch = fields
     elif len(fields) == 1:
-        owner, branch = 'ywangd', fields[0]
+        owner, branch = 'warexify', fields[0]
     else:
-        owner, branch = 'ywangd', 'master'
+        owner, branch = 'warexify', 'dev'
         print('Invalid target {}, using default {}:{}'.format(target, owner, branch))
 
     print(_stash.text_style('Running selfupdate ...', {'color': 'yellow', 'traits': ['bold']}))

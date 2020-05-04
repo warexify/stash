@@ -59,7 +59,7 @@ def visit_homepage():
     mv.subview_open = True
     v = ui.WebView()
     v.present()
-    v.load_url("https://www.github.com/ywangd/stash/")
+    v.load_url("https://www.github.com/warexify/stash/")
     v.wait_modal()
     mv.subview_open = False
 
@@ -203,7 +203,7 @@ OPTIONS = {
                 "option_name": None,
                 "type": TYPE_LABEL,
                 "value": os.getenv("SELFUPDATE_TARGET",
-                                   "ywangd:master"),
+                                   "warexify:dev"),
                 "description": "Source to download update from. Format: '<github_user>:<branch>'",
             },
             {
@@ -224,7 +224,7 @@ OPTIONS = {
                 "display_name": "Visit Homepage",
                 "option_name": None,
                 "type": TYPE_COMMAND,
-                "command": "webviewer -f -m https://www.github.com/ywangd/stash/",
+                "command": "webviewer -f -m https://www.github.com/warexify/stash/",
                 "description": "Visit the StaSh homepage",
             },
         ],

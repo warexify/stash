@@ -9,7 +9,7 @@ setup(
     author="bennr01",
     description="local test package for StaSh pip. DO NOT UPLOAD!",
     keywords="test",
-    url="https://github.com/ywangd/stash/",
+    url="https://github.com/warexify/stash/",
     classifiers=[
         "Topic :: Test",
     ],

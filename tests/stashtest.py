@@ -28,7 +28,7 @@ def network_is_available():
     """
     # to be sure, test multiple sites in case one of them is offline
     test_sites = [
-        "https://github.com/ywangd/stash/",  # main StaSh repo
+        "https://github.com/warexify/stash/",  # main StaSh repo
         "https://forum.omz-software.com/",  # pythonista forums
         "https://python.org/",  # python website
         ]

@@ -130,8 +130,8 @@ Options:
 	-b <body>, --body <body>  		Body of pull request [default: ]
 	-i <issue>, --issue <issue>  	Issue number
 Examples:
-	gh pull stash ywangd jsbain 
-	gh pull stash ywangd:dev jsbain:dev
+	gh pull stash warexify jsbain 
+	gh pull stash warexify:dev jsbain:dev
 	gh pull stash :dev :master
 			
 	base and head should be in the format owner:branch.

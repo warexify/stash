@@ -319,7 +319,7 @@ def ensure_pkg_resources():
     except ImportError:
         try:
             print('Approximating pkg_resources ...')
-            GitHubRepository().install('ywangd/pkg_resources', None)
+            GitHubRepository().install('warexify/pkg_resources', None)
         except:  # silently fail as it may not be important or necessary
             pass
 

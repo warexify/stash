@@ -7,13 +7,13 @@ import zipfile
 import time
 
 
-DEFAULT_REPO = "ywangd"
-DEFAULT_BRANCH = "master"
+DEFAULT_REPO = "warexify"
+DEFAULT_BRANCH = "dev"
 TMPDIR = os.environ.get('TMPDIR', os.environ.get('TMP'))
 URL_TEMPLATE = 'https://github.com/{}/stash/archive/{}.zip'
 TEMP_ZIPFILE = os.path.join(TMPDIR, 'StaSh.zip')
 TEMP_PTI = os.path.join(TMPDIR, 'ptinstaller.py')
-URL_PTI = 'https://raw.githubusercontent.com/ywangd/pythonista-tools-installer/master/ptinstaller.py'
+URL_PTI = 'https://raw.githubusercontent.com/warexify/pythonista-tools-installer/dev/ptinstaller.py'
 BASE_DIR = os.path.expanduser('~')
 DEFAULT_INSTALL_DIR = os.path.join(BASE_DIR, 'Documents/site-packages/stash')
 DEFAULT_PTI_PATH = os.path.join(DEFAULT_INSTALL_DIR, "bin", "ptinstaller.py")

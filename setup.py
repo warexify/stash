@@ -108,8 +108,8 @@ setup(
     name="StaSh",
     version=get_stash_version(CORE_PATH),
     description="StaSh for PC",
-    author="https://github.com/ywangd and various contributors",
-    url="https://github.com/ywangd/stash/",
+    author="https://github.com/warexify and various contributors",
+    url="https://github.com/warexify/stash/",
     packages=[
         "stash",
         "stash.system",
